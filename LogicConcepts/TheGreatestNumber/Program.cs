@@ -1,44 +1,33 @@
 ﻿using Shared;
 
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
 do
 {
-    var a = ConsoleExtension.GetInt("Ingrese el primer número: ");
-    var b = ConsoleExtension.GetInt("Ingrese el segundo número: ");
-    var c = ConsoleExtension.GetInt("Ingrese el tercer número: ");
-
+    Console.WriteLine("Ingrese 3 números diferentes");
+    var a = ConsoleExtension.GetInt("Ingrese primer número : ");
+    var b = ConsoleExtension.GetInt("Ingrese segundo número: ");
+    var c = ConsoleExtension.GetInt("Ingrese tercer número : ");
 
     if (a > b && a > c)
     {
-        if (b > c)
-        {
-            Console.WriteLine($"El mayor es {a}, el segundo es {b}, el menor es {c}");
-        }
-        else
-        {
-            Console.WriteLine($"El mayor es {a}, el segundo es {c}, el menor es {b}");
-        }
+        Console.WriteLine($"El número mayor es: {a}");
     }
     else if (b > a && b > c)
     {
-        if (a > c)
-        {
-            Console.WriteLine($"El mayor es {b}, el segundo es {a}, el menor es {c}");
-        }
-        else
-        {
-            Console.WriteLine($"El mayor es {b}, el segundo es {c}, el menor es {a}");
-        }
+        Console.WriteLine($"El número mayor es: {b}");
     }
     else
     {
-        if (a > b)
-        {
-            Console.WriteLine($"El mayor es {c}, el segundo es {b}, el menor es {a}");
-        }
-        else
-        {
-            Console.WriteLine($"El mayor es {c}, el segundo es {b}, el menor es {a}");
-        }
+        Console.WriteLine($"El número mayor es: {c}");
     }
-} while (true);
 
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+
+Console.WriteLine("Game Over.");
