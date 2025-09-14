@@ -49,8 +49,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11", "11", "{63C2D80B-246E-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportationCompany", "TransportationCompany\TransportationCompany.csproj", "{3D725937-5E05-4A3A-ABF6-9DF34A7790DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleExtension", "Shared\ConsoleExtension.csproj", "{8D4177FD-8666-0A53-AC42-B31147A7A493}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,10 +99,6 @@ Global
 		{3D725937-5E05-4A3A-ABF6-9DF34A7790DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D725937-5E05-4A3A-ABF6-9DF34A7790DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D725937-5E05-4A3A-ABF6-9DF34A7790DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D4177FD-8666-0A53-AC42-B31147A7A493}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D4177FD-8666-0A53-AC42-B31147A7A493}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D4177FD-8666-0A53-AC42-B31147A7A493}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D4177FD-8666-0A53-AC42-B31147A7A493}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -121,7 +115,6 @@ Global
 		{D9A5714B-5AB2-4F16-BB94-EAB7310E2CF2} = {6AE1F444-A97F-4F7C-91A6-34CD5981E137}
 		{51767BB1-7675-4882-834E-9437EDA3F52F} = {7B4C4A3B-5BF6-4AF2-A2FA-9B8B66F6F47A}
 		{3D725937-5E05-4A3A-ABF6-9DF34A7790DB} = {63C2D80B-246E-4F56-AD21-D31E4EB87DCF}
-		{8D4177FD-8666-0A53-AC42-B31147A7A493} = {9ABA6A36-ABC6-43EF-A54D-237CED2952A7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64B677BC-1F9F-40A0-B0F4-EDDF4E7D762D}
