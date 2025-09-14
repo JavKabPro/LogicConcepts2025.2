@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Users\soyja\OneDrive\Escritorio\Shared\Shared.csproj" />
+    <ProjectReference Include="..\Shared\ConsoleExtension\ConsoleExtension.csproj" />
   </ItemGroup>
 
 </Project>
