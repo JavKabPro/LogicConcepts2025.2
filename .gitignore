@@ -417,3 +417,5 @@ FodyWeavers.xsd
 *.msm
 *.msp
 /LogicConcepts/Shared/ConsoleExtension.csproj
+/LogicConcepts/Shared/Program.cs
+/LogicConcepts/Shared/Program.cs
