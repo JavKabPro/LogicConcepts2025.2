@@ -8,14 +8,14 @@ do
     var route = string.Empty;
     do
     {
-        route = ConsoleExtension.GetValidOptions("Ruta [1][2][3][4].........................: ", routeOptions);
+        route = ConsoleExtension.GetValidOptions("Ruta [1][2][3][4]............................: ", routeOptions);
     } while (!routeOptions.Any(x => x == route));
 
-    var trips = ConsoleExtension.GetInt("Número de viajes.............................: ");
+    var trips = ConsoleExtension.GetInt("Número de viajes..............................: ");
     var passengers = ConsoleExtension.GetInt("Número de pasajeros total.....................: ");
-    var packages10 = ConsoleExtension.GetInt("Número de paquetes de menos de 10kg...................: ");
-    var packages10_20 = ConsoleExtension.GetInt("Número de paquetes de entre 10kg y 20 Kg.................: ");
-    var packages20 = ConsoleExtension.GetInt("Número de paquetes de menos de 20kg...................: ");
+    var packages10 = ConsoleExtension.GetInt("Número de paquetes de menos de 10kg...........: ");
+    var packages10_20 = ConsoleExtension.GetInt("Número de paquetes de entre 10kg y 20 Kg......: ");
+    var packages20 = ConsoleExtension.GetInt("Número de paquetes de menos de 20kg...........: ");
 
     // Calculations
     var incomePassengers = GetIncomePassangers(route, passengers, trips);
